@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {  
+    scroll-behavior: smooth;
+    background-color: #ffdfc9;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #8b5a3c;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffe6b3;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    color: #ffe6b3;
+    border-bottom: 2px solid #ffe6b3;
+}
+
+
+.container1 {
+    background-color: #f0b992;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container1 h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.best-menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.best-menu img {
+    width: 220px;
+    height: 220px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/*อันที่เเยก main ซ้าย ขวา aritcle - aside */
+.container2 {
+    background-color: #ffc8a1;
+    margin: 80px;
+    padding: 50px;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    gap: 40px;
+}
+
+.panel {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/*ทำตารางcorum*/
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: antiquewhite;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.cafe1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.card button {
+    border: 2px solid #5a2d0c;
+    background: transparent;
+    padding: 10px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #5a2d0c;
+    color: white;
+}
+
+
+.cart-box {
+    background-color: #fff5ec;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.cart-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+/*ทำตารางด้านขวา*/
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.cart-item h4 {
+    font-size: 16px;
+}
+
+.cart-item p {
+    font-size: 14px;
+}
+
+.plus {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plus button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+   
+    .container2 {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        padding: 25px;
+    }
+
+
+    .panel {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .cart-box {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cart-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .plus button {
+        padding: 4px 8px;
+    }
+
+   
+    .best-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    
+    .nav-menu {
+        gap: 16px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
