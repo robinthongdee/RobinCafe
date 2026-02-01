@@ -5,54 +5,48 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+body {
     background-color: #ffdfc9;
 }
 
-/* ---------- NAVBAR ---------- */
+/* NAV */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 24px;
+    padding: 20px 32px;
     background-color: #8b5a3c;
 }
 
 .logo {
     font-size: 28px;
-    font-weight: bold;
     color: #ffe6b3;
+    font-weight: bold;
 }
 
 .nav-menu {
     display: flex;
-    gap: 40px;
+    gap: 32px;
     list-style: none;
 }
 
 .nav-menu a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
 }
 
-/* ---------- BEST MENU ---------- */
+/* BEST MENU */
 .container1 {
     background-color: #f0b992;
     padding: 50px 20px;
     text-align: center;
 }
 
-.container1 h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
 .best-menu {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-top: 30px;
 }
 
 .best-menu img {
@@ -62,26 +56,25 @@ html {
     object-fit: cover;
 }
 
-/* ---------- MAIN ---------- */
+/* MAIN */
 .container2 {
     background-color: #ffc8a1;
-    margin: 60px;
+    margin: 40px;
     padding: 40px;
     border-radius: 30px;
 
     display: grid;
     grid-template-columns: 3fr 1.2fr;
-    gap: 40px;
+    gap: 30px;
 }
 
 .panel {
     grid-column: 1 / -1;
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 28px;
 }
 
-/* ---------- MENU GRID ---------- */
+/* MENU GRID */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -103,14 +96,14 @@ html {
 }
 
 .card p {
+    margin: 15px 0;
     font-size: 22px;
-    margin: 16px 0;
 }
 
-/* ---------- CART ---------- */
+/* CART */
 .cart-box {
     background-color: #fff5ec;
-    padding: 24px;
+    padding: 25px;
     border-radius: 25px;
 }
 
@@ -140,38 +133,34 @@ html {
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    font-weight: bold;
 }
 
 .total {
-    margin-top: 16px;
-    font-size: 16px;
     text-align: right;
+    margin-top: 15px;
 }
 
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
-
-    /* NAVBAR */
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-        padding: 14px;
-    }
-
-    .logo {
-        font-size: 22px;
-    }
 
     .nav-menu {
         gap: 14px;
-        flex-wrap: wrap;
-        justify-content: center;
+        font-size: 14px;
     }
 
-    /* BEST MENU */
+    .logo {
+        font-size: 20px;
+    }
+
     .best-menu {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
     }
 
     .best-menu img {
@@ -179,49 +168,25 @@ html {
         height: 160px;
     }
 
-    /* MAIN */
     .container2 {
-        grid-template-columns: 1fr;
-        margin: 20px;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 16px;
+        padding: 16px;
     }
 
-    .panel {
-        font-size: 24px;
-    }
-
-    /* MENU GRID */
     .menu-grid {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .card {
-        padding: 20px;
+        width: 100%;
+        max-width: 300px;
     }
 
-    .cafe1 {
-        width: 140px;
-        height: 140px;
-    }
-
-    .card p {
-        font-size: 18px;
-    }
-
-    /* CART */
     .cart-box {
+        width: 100%;
         margin-top: 20px;
-        padding: 18px;
-    }
-
-    .cart-item img {
-        width: 48px;
-        height: 48px;
-    }
-
-    .plus button {
-        width: 24px;
-        height: 24px;
-        font-size: 14px;
     }
 }
